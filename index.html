@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para la mejor Mamá ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="flower-container"></div>
+
+    <div class="main-content">
+        <header>
+            <h1 class="titulo">Feliz dia de la madre 🌸</h1>
+            <p class="intro">Mamá, cada uno de mis pasos tiene tu huella. Gracias por todo.</p>
+        </header>
+
+        <section class="grid-logros">
+            <div class="card" onclick="abrirModal('Mis logros gracias a ti', 'Gracias por impulsarme a estudiar y nunca rendirme. Mi título es tan tuyo como mío.', 'Graduacion.png')">
+                <div class="card-icon">🎓</div>
+                <h3>Mis Logros</h3>
+                <p>Haz clic para ver...</p>
+            </div>
+
+            <div class="card" onclick="abrirModal('Tu Sabiduría', 'Tus consejos han sido mi brújula en los momentos más difíciles.', 'Dinero.png')">
+                <div class="card-icon">💡</div>
+                <h3>Sabiduría</h3>
+                <p>Lo que aprendí de ti...</p>
+            </div>
+
+            <div class="card" onclick="abrirModal('Nuestros Momentos', 'Gracias por enseñarme que el mundo es hermoso a tu lado.', 'Viaje.png')">
+                <div class="card-icon">✈️</div>
+                <h3>Aventuras</h3>
+                <p>Recuerdos juntos...</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Hecho con amor por hijo Beto ❤️</p>
+        </footer>
+    </div>
+
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <img id="modal-img" src="" alt="Foto del recuerdo">
+            <p id="modal-texto"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
